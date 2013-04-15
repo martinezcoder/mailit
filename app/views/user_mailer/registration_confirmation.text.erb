@@ -5,7 +5,7 @@ Desde el equipo de SocialWin te agradecemos tu interés y esperamos que disfrute
 
 Así mismo, te invitamos a conocernos más de cerca participando en los comentarios de la aplicación o siguiendo nuestro foro de noticias. 
 
-Edit Profile: <%= edit_user_url(@user, :host => "localhost:3000") %>
+Edit Profile: <%= edit_user_url(@user, :host => ENV["DOMAIN"]) %>
 
 Saludos!
 Fran J Martinez

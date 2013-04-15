@@ -4,14 +4,19 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to example.com, <%= @user.name %></h1>
-    <p>
-      You have successfully signed up to example.com,
-      your username is: <%= @user.name %>.<br/>
-    </p>
-    <p>
-      To login to the site, just follow this link: <%= @url %>.
-    </p>
-    <p>Thanks for joining and have a great day!</p>
+
+
+	<h1><%= @user.name %>,</h1> 
+	bienvenido a la aplicación SocialWin Analytics.
+
+	<p>Desde el equipo de SocialWin te agradecemos tu interés y esperamos que disfrutes de tu experiencia con nuestra aplicación.</p>
+
+	<p>Así mismo, te invitamos a conocernos más de cerca participando en los comentarios de la aplicación o siguiendo nuestro foro de noticias.</p> 
+
+    <p>Edit Profile: <%= edit_user_url(@user, :host => ENV["DOMAIN"]) %></p>
+    
+    <p>	Saludos!
+		Fran J Martinez
+	</p>
   </body>
 </html>

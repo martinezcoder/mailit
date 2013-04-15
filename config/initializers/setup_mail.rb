@@ -10,7 +10,7 @@ ActionMailer::Base.smtp_settings = {
   :enable_starttls_auto => true
 }
 
-  
+
 ActionMailer::Base.raise_delivery_errors = true
 ActionMailer::Base.default_url_options[:host] = ENV["DOMAIN"]
 
